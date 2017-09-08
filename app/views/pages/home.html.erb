@@ -3,12 +3,16 @@
     	<div class="freeflix-logo">
           <%= cl_image_tag "logo.png", height: 200, crop:"scale" %>
         </div>
-    	<div class="banner-content text-center">
-	    	<h2>Freeflix and chill.</h2>
-		<div>
-	    	<%= link_to movies_path() , :method=> :post, class: "btn btn-freeflix btn-freeflix-white" do%>
-	        <% end %>
+	    	<div class="banner-content text-center">
+		    	<h2>Freeflix and chill. | Netflix for poor people.</h2>
+			<div>
+		    	<%= link_to movies_path() , :method=> :post, class: "btn btn-freeflix btn-freeflix-white" do%>
+		        <% end %>
+		    </div>
 	    </div>
-	    </div>
+	    <div class="snarly">
+        	<%= cl_image_tag "snarly.jpg", height: 200, crop:"scale" %>
+        </div>
+
     </div>
 </div>
