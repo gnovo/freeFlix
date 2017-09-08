@@ -17,6 +17,12 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 
+gem 'cloudinary', '1.1.7'
+gem 'carrierwave', '~> 0.11.2'
+gem 'attachinary', github: 'assembler/attachinary'
+gem 'better_errors'
+gem 'binding_of_caller'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
