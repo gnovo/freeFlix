@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+.banner {
+  padding: 0;
+  background-size: cover !important;
+  height: 100vh;
+  h2 {
+  	color: white;
+  }
+}
+
+.freeflix-logo {
+  padding-top: 200px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;  
+}
