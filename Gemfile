@@ -22,6 +22,7 @@ gem 'carrierwave', '~> 0.11.2'
 gem 'attachinary', github: 'assembler/attachinary'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'rails_emoji_picker'
 
 group :development, :test do
   gem 'pry-byebug'
