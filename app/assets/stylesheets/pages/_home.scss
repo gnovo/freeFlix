@@ -21,3 +21,22 @@
   left: 1500px;
   top: 700px;
 }
+
+.search-bar {
+  display: inline-block;
+}
+
+.btn-search {
+  background-color: $maroon;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 30px;
+  width: 150px;
+  color: $white;
+  &:hover {
+    background-color: #4F0C17;
+    color: $white;
+  }
+}
+
+
