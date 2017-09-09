@@ -9,7 +9,7 @@
 Movie.destroy_all
 
 
-CSV.foreach("db/Movies1257.csv") do |row|
+CSV.foreach("db/Movies091117.csv") do |row|
   Movie.create(
   title: row[0].to_s,
   year: row[1].to_s,

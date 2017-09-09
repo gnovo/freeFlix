@@ -1,14 +1,15 @@
-<div class="boxx" style="position: relative; display:flex-center;">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dgtihmi68/image/upload/v1504902326/nosferatu_uijai1.jpg');">
-        <div class="card-category"></div>
-          <div class="card-description">
-          </div>
-      </div>
-      <div class="card-footer">
-        <h3>Placeholder</h3>
-        <h3>Placeholder</h3>
-      </div>
+<% @movies.each do |movie| %>
+  <div class="boxx" style="position: relative; display:flex-center;">
+      <div class="col-xs-12 col-sm-4">
+        <%= link_to movie_path(movie) do %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= movie.picture_url %>);">
+        </div>
+        <div class="card-footer text-center">
+          <h3><%= movie.title %></h3>
+          <h3><%= movie.length %></h3>
+        </div>
+        <% end %>
+    </div>
+     <% end %>
   </div>
-</div>
 
