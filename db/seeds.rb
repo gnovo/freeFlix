@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 Movie.destroy_all
 
 
@@ -21,15 +22,3 @@ CSV.foreach("db/Movies1257.csv") do |row|
   picture_url: row[8].to_s
   )
 end
-
-# movie = Movie.create!(
-#   title: "Adnan Goes to Hollywood",
-#   length: "119",
-#   synopsis: 'A mole from a rural community in Iowa tries to make it big in Hollywood during the Golden Age of cinema.',
-#   emoji_group: ':D',
-#   actors: "Adnan Ahmed",
-#   directors: "Charlie Merrill",
-#   year: '2017',
-#   url: 'https://www.youtube.com/',
-#   picture_url: 'https://images-na.ssl-images-amazon.com/images/I/51CZB2TG47L._SY300_.jpg',
-#     )

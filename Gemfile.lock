@@ -83,6 +83,8 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
+    emoji (1.0.7)
+      json
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -154,6 +156,8 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_emoji_picker (0.1.5)
+      emoji
     railties (5.0.5)
       actionpack (= 5.0.5)
       activesupport (= 5.0.5)
@@ -242,6 +246,7 @@ DEPENDENCIES
   pry-rails
   puma
   rails (= 5.0.5)
+  rails_emoji_picker
   redis
   sass-rails
   simple_form
@@ -254,4 +259,4 @@ RUBY VERSION
    ruby 2.3.4p301
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2
