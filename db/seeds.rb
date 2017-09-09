@@ -9,11 +9,11 @@
 Movie.destroy_all
 
 
-CSV.foreach("db/Movies091117.csv") do |row|
+CSV.foreach("db/Movies334.csv") do |row|
   Movie.create(
   title: row[0].to_s,
   year: row[1].to_s,
-  emoji_group: row[2].to_s,
+  emoji_group: row[2],
   synopsis: row[3],
   directors: row[4].to_s,
   actors: row[5].to_s,

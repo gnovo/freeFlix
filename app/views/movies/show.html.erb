@@ -4,7 +4,7 @@
       <%=image_tag(@movie.picture_url)%>
       <h2><%= @movie.title %> (<%= @movie.year %>)</h2>
     </div>
-    <p><b>Emoji Synopsis:</b> <%= @movie.emoji_group %></p>
+    <p><b>Emoji Synopsis:</b> <%= image_tag(@movie.emoji_group) %></p>
     <p><b>Plot Synopsis:</b> <%= @movie.synopsis %></p>
     <p><b>Director:</b> <%= @movie.directors %></p>
     <p><b>Cast:</b> <%= @movie.actors %></p>
