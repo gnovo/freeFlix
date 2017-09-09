@@ -1,14 +1,14 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 99%), url(<%=image_path('curtains.jpeg')%>">
-  <div class="banner-content">
-    <p>Poster</p>
-    <h1><%= @movie.title %> (<%= @movie.year %>)</h1>
-    <p>Emoji Synopsis: <%= @movie.emoji_group %></p>
-    <p>Plot Synopsis: <%= @movie.synopsis %></p>
-    <p>Director: <%= @movie.director %></p>
-    <p>Cast: </p>
-    <% @movie.actor.each do |a| %>
-      <p><%= a.name %></p>
-    <% end %>
+  <div class="banner-content movie-show">
+    <div class="row>"
+      <%= image_tag(@movie.picture_url) %>
+      <h1><%= @movie.title %> (<%= @movie.year %>)</h1>
+    </div>
+    <p><b>Emoji Synopsis:</b> <%= @movie.emoji_group %></p>
+    <p><b>Plot Synopsis:</b> <%= @movie.synopsis %></p>
+    <p><b>Director:</b> <%= @movie.directors %></p>
+    <p><b>Cast:</b> <%= @movie.actors %></p>
+    <p><b>Length:</b> <%= @movie.length %> minutes</p>
     <a class="btn btn-primary btn-lg">Watch Now</a>
   </div>
 </div>

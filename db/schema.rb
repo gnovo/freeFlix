@@ -10,37 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170908183241) do
+ActiveRecord::Schema.define(version: 20170908233130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "actors", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "directors", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "movies", force: :cascade do |t|
     t.string   "title"
     t.string   "length"
     t.text     "synopsis"
     t.string   "emoji_group"
-    t.integer  "actor_id"
-    t.integer  "director_id"
-    t.integer  "year"
     t.string   "url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "picture_url"
-    t.index ["actor_id"], name: "index_movies_on_actor_id", using: :btree
-    t.index ["director_id"], name: "index_movies_on_director_id", using: :btree
+    t.string   "actors"
+    t.string   "directors"
+    t.string   "year"
   end
 
   create_table "users", force: :cascade do |t|
@@ -60,6 +46,4 @@ ActiveRecord::Schema.define(version: 20170908183241) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  add_foreign_key "movies", "actors"
-  add_foreign_key "movies", "directors"
 end

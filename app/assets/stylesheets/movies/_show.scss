@@ -1,6 +1,13 @@
 .banner {
-  height: calc(100vh - 50px);
+  height: 150vh;
   background-size: cover;
   position: relative;
   background-position: center;
+}
+
+.movie-show {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10%;
 }
