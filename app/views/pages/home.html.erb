@@ -18,15 +18,6 @@
         	<%= image_tag "emoji/8ball.png" %>
 </p>
 
-<% @movie = "banana"  %>
-<p class="emoji-picker-container">
-<%= form_for @movie, url: {action: "show"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.text_field :title, class: 'form-control', data: { emojiable: true } %>
-  <%= f.text_area :body, size: "60x12" %>
-  <%= f.submit "Create" %>
-<% end %>
-
-</p>
 
     </div>
 </div>
