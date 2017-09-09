@@ -10,5 +10,6 @@
     <p><b>Cast:</b> <%= @movie.actors %></p>
     <p><b>Length:</b> <%= @movie.length %> minutes</p>
     <a href=<%= @movie.url %> target="_blank" class="btn btn-search">Watch Now</a>
+     <%= link_to "All Movies", movies_path(), class: 'btn btn-search' %>
   </div>
 </div>

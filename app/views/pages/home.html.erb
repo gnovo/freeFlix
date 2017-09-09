@@ -1,7 +1,7 @@
 <div class="banner" style="background-image: linear-gradient(-100deg, rgba(0,0,0,0) 100%, rgba(0,36,61,0.6) 99%), url(<%=image_path('theatre_landing.jpg')%>">
   <div class="text-center">
     <div class="freeflix-logo">
-      <%= cl_image_tag "logo_banner.png", height: 200, crop:"scale" %>
+      <%= cl_image_tag "logo_landing.png", height: 200, crop:"scale" %>
     </div>
     <div class="banner-content text-center">
       <h2>Freeflix and chill for poor people.</h2>
@@ -19,7 +19,8 @@
         <%= f.text_field :title, class: 'form-control', data: { emojiable: true } %>
       </p>
       <br>
-      <%= f.submit "Search", class: 'btn btn-search' %>
+      <%= link_to "Search", movies_path(), class: 'btn btn-search' %>
+      <%= f.submit "Search", class: 'hidden' %>
     <% end %>
   </div>
     </div>
