@@ -5,6 +5,7 @@
   height: 100vh;
   h2 {
   	color: $white;
+  	text-shadow: 2px 2px black;
   }
 }
 
@@ -31,10 +32,10 @@
   margin-top: 15px;
   border-radius: 5px;
   font-size: 30px;
-  width: 150px;
+  width: 190px;
   color: $white;
   &:hover {
-    background-color: #4F0C17;
+    background-color: $dark-maroon;
     color: $white;
   }
 }

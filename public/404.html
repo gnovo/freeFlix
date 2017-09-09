@@ -3,7 +3,7 @@
 <head>
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
+    <style>
   .rails-default-error-page {
     background-color: #EFEFEF;
     color: #2E2F30;
@@ -51,17 +51,44 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
+
+  .btn-404 {
+    background-color: #66101F;
+    margin-top: 15px;
+    margin-bottom: 75px;
+    padding: 10px;
+    border-radius: 5px solid #66101F;
+    font-size: 30px;
+    width: 190px;
+    color: #FAFAFA;
+    text-decoration: none;
+  }
+  
+  .btn-search:hover {
+    background-color: #4F0C17;
+    color: #FAFAFA;
+  }
   </style>
+
 </head>
 
 <body class="rails-default-error-page">
   <!-- This file lives in public/404.html -->
-  <div class="dialog">
+  <div class="container">
     <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+      <h1 class="text-center" style="font-size: 50px">Oops!</h1>
+      <p>We can't seem to find the page you're looking for.</p>
+      <p><strong>Error code: 404</strong></p>
+      <p style="padding-bottom: 15px">Here are some helpful links instead:</p>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+      <a href="/" class="btn-404">Home</a>
+      <a href="/movies" class="btn-404">Movies</a>
+      <h3 style="padding-top: 15px">Or, you can just <strong>play space-invaders</strong> instead!</h3>
+      <p></p>
+
+  </div>
+    <iframe src="http://html5.coconauts.net/space-invaders" id='404-game'
+        width="520" height="500" scrolling="none" frameborder="0"></iframe>
   </div>
 </body>
 </html>
